@@ -23,7 +23,7 @@ labels: labels (range 0 to 5) corresponding to ppg signal segments
 
 ## Citation
 
-If you use this repository, part or all of the full dataset, and/or our paper as part of your research, please cite our [paper](https://www.ahajournals.org/doi/10.1161/JAHA.121.023555) as
+If you use this repository, part or all of the full dataset, and/or our paper as part of your research, please cite the [publication] (https://www.ahajournals.org/doi/10.1161/JAHA.121.023555) as follows:
 ```
 @article{liu2022multiclass,
   title={Multiclass Arrhythmia Detection and Classification From Photoplethysmography Signals Using a Deep Convolutional Neural Network},
