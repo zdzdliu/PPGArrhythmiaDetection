@@ -1,4 +1,4 @@
-# MINA: Multilevel Knowledge-Guided Attention for Modeling Electrocardiography Signals, IJCAI 2019
+# Multiclass Arrhythmia Detection and Classification from Photoplethysmography Signals Using a Deep Convolutional Neural Network
 
 
 # Usage
