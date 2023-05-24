@@ -6,24 +6,23 @@
 
 ![](https://github.com/zdzdliu/PPGArrhythmiaDetection/blob/main/fig1.png)
 
-# Environment
-
-Python 3.7.5, PyTorch 1.2.0
-
-If you find the idea useful or use this code in your own work, please cite our [paper](https://www.ijcai.org/proceedings/2019/0816.pdf) as
-```
-@inproceedings{hong2019mina,
-  title={{MINA:} Multilevel Knowledge-Guided Attention for Modeling Electrocardiography Signals},
-  author={Hong, Shenda and Xiao, Cao and Ma, Tengfei and Li, Hongyan and Sun, Jimeng},
-  booktitle = {IJCAI 2019},
-  pages={5888--5894}
-}
-```
-
 # Dataset
 
-**Data** Training data can be found at https://archive.physionet.org/challenge/2017/#challenge-data
+The validation set and test set are provided in a .mat format, with each .mat file representing an individual. The information enclosed within each .mat file is as follows:
 
-**Label** Please use Revised labels (v3) at https://archive.physionet.org/challenge/2017/REFERENCE-v3.csv
+ppgseg: ppg segments, each with a length of 10s (sampling rate =100Hz)
+labels: labels (range 0 to 5) corresponding to ppg signal segments
 
-**Preprocessed** Or you can download my preprocessed dataset challenge2017.pkl from https://drive.google.com/drive/folders/1AuPxvGoyUbKcVaFmeyt3xsqj6ucWZezf
+0 sinus rhythm
+1 premature ventricular contraction
+2 premature atrial contraction
+3 ventricular tachycardia
+4 supraventricular tachycardia
+5 atrial fibrillation
+
+
+# cite
+
+If you use our code and dataset, please cite our [paper](https://www.ahajournals.org/doi/10.1161/JAHA.121.023555) as
+```
+Liu Z, Zhou B, Jiang Z, Chen X, Li Y, Tang M, Miao F. Multiclass Arrhythmia Detection and Classification From Photoplethysmography Signals Using a Deep Convolutional Neural Network. J Am Heart Assoc. 2022 Apr 5;11(7):e023555. doi: 10.1161/JAHA.121.023555.
